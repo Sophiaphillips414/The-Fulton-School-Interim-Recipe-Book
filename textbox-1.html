@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div> Title: <input type="text" id="Recipe_Title"> </div>
+
+
+   <div> Ingrediants: <textarea name="" id="Recipe_Ingrediants"></textarea> </div>
+
+
+   <div> Instructions: <textarea name="" id="Recipe_Instructions"></textarea> </div>
+
+
+   <div> Reflection: <textarea name="" id="Recipe_Reflection"></textarea> </div>
+</body>
+
+<script>
+    document.getElementById("Recipe_Title").addEventListener("change", function(){
+        console.log(this.value)
+    })
+    function update(){
+        let T =document.getElementById("Recipe_Title");
+        let IG =document.getElementById("Recipe_Ingrediants");
+        let IS =document.getElementById("Recipe_Instructions");
+        let R =document.getElementById("Recipe_Reflection")
+        console.log(T,IG,IS,R)
+    }
+</script>
+</html>
