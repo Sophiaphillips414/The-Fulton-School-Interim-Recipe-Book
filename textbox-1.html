@@ -19,14 +19,15 @@
 </body>
 
 <script>
+    // copy and paste lines 23-24 and put in the other ids
     document.getElementById("Recipe_Title").addEventListener("change", function(){
-        console.log(this.value)
+        update()
     })
     function update(){
-        let T =document.getElementById("Recipe_Title");
-        let IG =document.getElementById("Recipe_Ingrediants");
-        let IS =document.getElementById("Recipe_Instructions");
-        let R =document.getElementById("Recipe_Reflection")
+        let T =document.getElementById("Recipe_Title").value;
+        let IG =document.getElementById("Recipe_Ingrediants").value;
+        let IS =document.getElementById("Recipe_Instructions").value;
+        let R =document.getElementById("Recipe_Reflection").value
         console.log(T,IG,IS,R)
     }
 </script>
